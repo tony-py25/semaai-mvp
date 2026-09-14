@@ -1,16 +1,143 @@
-SSemaAI
-Kiswahili AI Assistant
-🇰🇪 Built for African-language AI
-Ongea. Uliza. Unda.
-SemaAI ni msaidizi wa AI anayekusaidia kutumia Kiswahili kwa urahisi.
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SemaAI - Kiswahili AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-💬 Uliza 🌍 Tafsiri ✍️ Ujumbe 📄 Barua 📚 Eleza 🗣️ Kiswahili
-Utaomba SemaAI ikusaidie nini? 
-Mfano: Nisaidie kuandika ujumbe wa heshima kwa landlord wangu kuhusu kodi...
+<body>
 
-🎤 Ongea Uliza SemaAI →
-Jibu la SemaAICopy
-↗ Share
-Anza na mfano
-Nisaidie kutafsiri “Good morning, how are you?” kwa Kiswahili. Andika ujumbe mfupi wa kuomba siku moja zaidi kulipa kodi. Eleza maana ya artificial intelligence kwa Kiswahili rahisi.
-SemaAI MVP · African Language AI
+  <header>
+    <h1>SemaAI</h1>
+    <p>Kiswahili AI Assistant</p>
+
+    <nav>
+      <a href="#home">Nyumbani</a>
+      <a href="#features">Huduma</a>
+      <a href="#examples">Mifano</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>🇰🇪 Ongea. Uliza. Unda.</h2>
+
+    <p>
+      SemaAI ni msaidizi wa AI anayekusaidia kutumia
+      Kiswahili kwa urahisi.
+    </p>
+
+    <a href="#assistant" class="button">Anza na SemaAI →</a>
+  </section>
+
+  <section class="section" id="features">
+    <h2>Unataka SemaAI ikusaidie nini?</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>💬 Uliza</h3>
+        <p>Uliza maswali na pata majibu kwa Kiswahili.</p>
+      </div>
+
+      <div class="card">
+        <h3>🌍 Tafsiri</h3>
+        <p>Tafsiri maandishi kati ya Kiswahili na lugha nyingine.</p>
+      </div>
+
+      <div class="card">
+        <h3>✍️ Ujumbe</h3>
+        <p>Andika ujumbe mfupi na wa heshima.</p>
+      </div>
+
+      <div class="card">
+        <h3>📄 Barua</h3>
+        <p>Pata msaada wa kuandika barua mbalimbali.</p>
+      </div>
+
+      <div class="card">
+        <h3>📚 Eleza</h3>
+        <p>Eleza mada ngumu kwa Kiswahili rahisi.</p>
+      </div>
+
+      <div class="card">
+        <h3>🗣️ Kiswahili</h3>
+        <p>Tumia AI katika lugha inayofaa kwa jamii za Afrika.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section" id="assistant">
+    <h2>Uliza SemaAI</h2>
+
+    <div class="card">
+      <p>
+        Andika ombi lako hapa. Hii ni sehemu ya kwanza ya
+        SemaAI MVP.
+      </p>
+
+      <br>
+
+      <textarea
+        id="prompt"
+        rows="5"
+        style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #ccc;"
+        placeholder="Mfano: Nisaidie kuandika ujumbe wa heshima kwa landlord wangu kuhusu kodi..."
+      ></textarea>
+
+      <br><br>
+
+      <button class="button" onclick="showDemoResponse()">
+        🎤 Uliza SemaAI →
+      </button>
+
+      <br><br>
+
+      <div id="response">
+        <strong>Jibu la SemaAI</strong>
+        <p id="responseText">
+          Jibu lako litaonekana hapa.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="examples">
+    <h2>Anza na mfano</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <p>
+          Nisaidie kutafsiri “Good morning, how are you?”
+          kwa Kiswahili.
+        </p>
+      </div>
+
+      <div class="card">
+        <p>
+          Andika ujumbe mfupi wa kuomba siku moja zaidi
+          kulipa kodi.
+        </p>
+      </div>
+
+      <div class="card">
+        <p>
+          Eleza maana ya artificial intelligence kwa
+          Kiswahili rahisi.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>SemaAI MVP · African Language AI</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
