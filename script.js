@@ -1,9 +1,12 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".button");
+function showDemoResponse() {
+  const prompt = document.getElementById("prompt").value.trim();
+  const responseText = document.getElementById("responseText");
 
-  buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      console.log("SemaAI MVP button clicked");
-    });
-  });
-});
+  if (prompt === "") {
+    responseText.textContent = "Tafadhali andika ombi lako kwanza.";
+    return;
+  }
+
+  responseText.textContent =
+    "Asante! SemaAI imepokea ombi lako: " + prompt;
+}
