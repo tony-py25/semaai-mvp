@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SemaAI - Kiswahili AI Assistant</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 <body>
 
@@ -137,7 +137,7 @@
     <p>SemaAI MVP · African Language AI</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
 </html>
